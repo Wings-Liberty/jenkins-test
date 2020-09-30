@@ -87,6 +87,6 @@
                 </configuration>
             </plugin>
         </plugins>
-        <finalName>login</finalName>
+        <finalName>jenkins-test</finalName>
     </build>
 </project>
