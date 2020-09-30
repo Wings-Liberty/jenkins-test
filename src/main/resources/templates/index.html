@@ -1,119 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <!--    引入bootstrap的css-->
-<!--    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>-->
-    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}"/>
-    <!-- Custom styles for this template -->
-<!--    <link href="css/signin.css" rel="stylesheet">-->
-    <link type="text/css" th:href="@{/css/signin.css}" rel="stylesheet">
-
-    <style type="text/css">
-        #login-username, #login-password {
-            margin-top: 20px;
-            height: 44px;
-        }
-
-        #login-password {
-            margin-bottom: 20px;
-        }
-
-        #register-username, #register-passord {
-            margin-top: 20px;
-            height: 44px;
-        }
-
-        #register-passord {
-            margin-bottom: 20px;
-        }
-
-        #signin {
-            max-width: 330px;
-            padding: 15px;
-            margin: 0 auto;
-        }
-
-        #login-error, #register-error {
-            margin-top: 20px;
-            display: none;
-        }
-    </style>
-
-
 </head>
 <body>
 
-<div id="signin" class="container">
+<h1>Success</h1>
 
-    <!--
- 标签页
- 内韩：登录，注册标签页
--->
-    <ul class="nav nav-tabs" role="tablist">
-        <!--        登录-->
-        <li role="presentation" class="active">
-            <a href="#login" aria-controls="login" role="tab" data-toggle="tab">登录</a>
-        </li>
-        <!--        注册-->
-        <li role="presentation">
-            <a href="#register" aria-controls="register" role="tab" data-toggle="tab">注册</a>
-        </li>
-
-    </ul>
-
-    <!-- Tab panes -->
-    <div class="tab-content">
-        <!--            登录-->
-        <div role="tabpanel" class="tab-pane active" id="login">
-            <!--                用户名输入框-->
-            <label for="login-username" class="sr-only">Username</label>
-            <input type="text" id="login-username" name="username" class="form-control" placeholder="Username"
-                   autofocus>
-            <!--                密码输入框-->
-            <label for="login-password" class="sr-only">Password</label>
-            <input type="password" id="login-password" name="password" class="form-control" placeholder="Password"
-            >
-            <!--                登录按钮-->
-            <button id="btn-login" class="btn btn-lg btn-primary btn-block"
-            >登录
-            </button>
-
-            <!--            错误提示框-->
-            <div id="login-error" class="alert alert-danger" role="alert">...</div>
-
-        </div>
-
-        <!--            注册-->
-        <div role="tabpanel" class="tab-pane" id="register">
-            <!--                用户名输入框-->
-            <label for="register-username" class="sr-only">Username</label>
-            <input type="text" id="register-username" name="username" class="form-control" placeholder="Username"
-                   autofocus>
-            <!--                密码输入框-->
-            <label for="register-passord" class="sr-only">Password</label>
-            <input type="password" id="register-passord" name="password" class="form-control" placeholder="Password"
-            >
-            <!--                注册按钮-->
-            <button id="btn-register" class="btn btn-lg btn-primary btn-block"
-            >注册
-            </button>
-
-            <!--            错误提示框-->
-            <div id="register-error" class="alert alert-danger" role="alert">...</div>
-
-        </div>
-    </div>
-
-</div> <!-- /container -->
-
-<!--<script src="js/jquery.min.js"></script>-->
-<!--<script src="js/bootstrap.min.js"></script>-->
-<!--<script src="js/login.js"></script>-->
-
-<script th:src="@{/js/jquery.min.js}"></script>
-<script th:src="@{/js/bootstrap.min.js}"></script>
-<script th:src="@{/js/login.js}"></script>
 </body>
 </html>
